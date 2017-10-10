@@ -12,6 +12,10 @@
 		147C12EE1F8C5B08007CF207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147C12EC1F8C5B08007CF207 /* Main.storyboard */; };
 		147C12F01F8C5B08007CF207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147C12EF1F8C5B08007CF207 /* Assets.xcassets */; };
 		147C12F31F8C5B08007CF207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147C12F11F8C5B08007CF207 /* LaunchScreen.storyboard */; };
+		147C12FB1F8C5F49007CF207 /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 147C12FA1F8C5F49007CF207 /* address.plist */; };
+		147C12FE1F8C61F3007CF207 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147C12FD1F8C61F3007CF207 /* MapKit.framework */; };
+		147C13021F8C672B007CF207 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 147C13011F8C672B007CF207 /* icon.png */; };
+		147C13041F8C68F8007CF207 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147C13031F8C68F8007CF207 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		147C12EF1F8C5B08007CF207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		147C12F21F8C5B08007CF207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		147C12F41F8C5B08007CF207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147C12FA1F8C5F49007CF207 /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
+		147C12FD1F8C61F3007CF207 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		147C13011F8C672B007CF207 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
+		147C13031F8C68F8007CF207 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147C12FE1F8C61F3007CF207 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				147C12E71F8C5B08007CF207 /* Busan Map Tour - Jang */,
 				147C12E61F8C5B08007CF207 /* Products */,
+				147C12FC1F8C61F3007CF207 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +67,22 @@
 				147C12E81F8C5B08007CF207 /* AppDelegate.swift */,
 				147C12EA1F8C5B08007CF207 /* ViewController.swift */,
 				147C12EC1F8C5B08007CF207 /* Main.storyboard */,
+				147C12FA1F8C5F49007CF207 /* address.plist */,
 				147C12EF1F8C5B08007CF207 /* Assets.xcassets */,
+				147C13011F8C672B007CF207 /* icon.png */,
+				147C13031F8C68F8007CF207 /* DetailViewController.swift */,
 				147C12F11F8C5B08007CF207 /* LaunchScreen.storyboard */,
 				147C12F41F8C5B08007CF207 /* Info.plist */,
 			);
 			path = "Busan Map Tour - Jang";
+			sourceTree = "<group>";
+		};
+		147C12FC1F8C61F3007CF207 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				147C12FD1F8C61F3007CF207 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				147C12F31F8C5B08007CF207 /* LaunchScreen.storyboard in Resources */,
+				147C13021F8C672B007CF207 /* icon.png in Resources */,
+				147C12FB1F8C5F49007CF207 /* address.plist in Resources */,
 				147C12F01F8C5B08007CF207 /* Assets.xcassets in Resources */,
 				147C12EE1F8C5B08007CF207 /* Main.storyboard in Resources */,
 			);
@@ -136,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147C13041F8C68F8007CF207 /* DetailViewController.swift in Sources */,
 				147C12EB1F8C5B08007CF207 /* ViewController.swift in Sources */,
 				147C12E91F8C5B08007CF207 /* AppDelegate.swift in Sources */,
 			);
