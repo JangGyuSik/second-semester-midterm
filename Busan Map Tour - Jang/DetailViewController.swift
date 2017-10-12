@@ -20,7 +20,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = navigationController?.title
+        //타이틀 표시
+        navigationItem.title = titleData
         // Do any additional setup after loading the view.
 
         print(addressData as Any)

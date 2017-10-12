@@ -59,7 +59,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Busan Map Tour" id="ij3-VT-KiD">
-                        <barButtonItem key="rightBarButtonItem" title="All" id="KOm-k6-9fs"/>
+                        <barButtonItem key="rightBarButtonItem" title="All" id="KOm-k6-9fs">
+                            <connections>
+                                <segue destination="kGQ-yF-bZP" kind="show" id="HEZ-YO-ne2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -69,6 +73,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="DZ3-BY-mGA">
+            <objects>
+                <viewController id="kGQ-yF-bZP" customClass="SecondViewController" customModule="Busan_Map_Tour___Jang" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Kh-xi-kje"/>
+                        <viewControllerLayoutGuide type="bottom" id="xTO-eq-Ycc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ijZ-ke-AVD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="is9-y0-feK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="is9-y0-feK" secondAttribute="trailing" id="1ga-wk-Xw7"/>
+                            <constraint firstItem="is9-y0-feK" firstAttribute="leading" secondItem="ijZ-ke-AVD" secondAttribute="leading" id="Ao6-yz-cMk"/>
+                            <constraint firstItem="is9-y0-feK" firstAttribute="top" secondItem="3Kh-xi-kje" secondAttribute="bottom" id="DBq-Y3-bEM"/>
+                            <constraint firstItem="xTO-eq-Ycc" firstAttribute="top" secondItem="is9-y0-feK" secondAttribute="bottom" id="R7E-9X-EiX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myMap" destination="is9-y0-feK" id="pHI-u4-lyQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0y6-MA-v0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="-173"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="9Xi-EM-nIw">
@@ -100,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ir-qG-Uhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1826" y="123"/>
+            <point key="canvasLocation" x="1820" y="484"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="znx-0A-nCF">
