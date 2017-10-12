@@ -44,9 +44,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         return myCell
     }
- 
-
     
-    
+    //segue를 통해서 데이터 넘기기
+      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "go" {
+        let detailVC = segue.destination as! DetailViewController
+        let myPath = myTable.indexPathForSelectedRow
+        let mytitle = (contents[(myPath?.row)!] as AnyObject).value(forKey: "title")
+        let myaddress = (contents[(myPath?.row)!] as AnyObject).value(forKey: "address")
+            
+            detailVC.titleData = mytitle as? String
+            detailVC.addressData = myaddress as? String
+            
+        }
+        else{
+        }
+    }
 }
 
